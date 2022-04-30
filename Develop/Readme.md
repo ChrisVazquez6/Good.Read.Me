@@ -15,10 +15,9 @@
 <p>Installation</p>
 <h3 id='Usage'>Usage</h3>
 <p>Usage</p>
-<p>license</p>
 <h3 id='contributions'>Contributions</h3>
 <p>Contributions</p>
-<h3 id='test'>test</h3>
+<h3 id='test'>Test</h3>
 <p>Test</p>
-<h3 id='questions'>questions</h3>
+<h3 id='questions'>Questions</h3>
 <p>Questions</p>

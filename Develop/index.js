@@ -54,6 +54,37 @@ const questions =[
 inquirer.prompt(questions)
 .then(answers =>{  
   console.log(answers)
+  let readme1 =`<img src= "https://img.shields.io/badge/${answers.license}-blue.svg">\
+<h1>Title</h1>
+<p>Decription</p>
+<p>Table of Cont</p>
+<details open='open'>
+<summary>Table of Cont</summary>
+<ol>
+<li><a href='#Installation'>Installation</a></li>
+<li><a href='#Usage'>Usage</a></li>
+<li><a href='#contributions'>Contributions</a></li>
+<li><a href='#test'>Test</a></li>
+<li><a href='#questions'>Questions</a></li>
+</details>
+<h3 id='Installation'>Installation</h3>
+<p>${answers.installation}</p>
+
+<h3 id='Usage'>Usage</h3>
+<p>${answers.usage}</p>
+
+<h3 id='contributions'>Contributions</h3>
+<p>${answers.contributions}</p>
+
+<h3 id='test'>Test</h3>
+<p>${answers.contributions}</p>
+
+<h3 id='questions'>Questions</h3>
+<p>Support 
+Github:ChrisVazquez6
+Email:cvg_v10@hotmail.com</p>
+`
+  fs.writeFile('readme1.md',readme1, err=>console.log(err))
 })
 .catch(err=> console.log(err))
 
