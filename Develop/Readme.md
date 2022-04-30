@@ -7,15 +7,18 @@
 <ol>
 <li><a href='#Installation'>Installation</a></li>
 <li><a href='#Usage'>Usage</a></li>
-<li><a href='#license'>license</a></li>
-<li><a href='#contribuations'>contribuations</a></li>
-<li><a href='#test'>test</a></li>
-<li><a href='#questions'>questions</a></li>
+<li><a href='#contributions'>Contributions</a></li>
+<li><a href='#test'>Test</a></li>
+<li><a href='#questions'>Questions</a></li>
 </details>
 <h3 id='Installation'>Installation</h3>
 <p>Installation</p>
+<h3 id='Usage'>Usage</h3>
 <p>Usage</p>
 <p>license</p>
-<p>Contribuations</p>
+<h3 id='contributions'>Contributions</h3>
+<p>Contributions</p>
+<h3 id='test'>test</h3>
 <p>Test</p>
+<h3 id='questions'>questions</h3>
 <p>Questions</p>
