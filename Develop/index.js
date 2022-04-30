@@ -15,11 +15,6 @@ const questions =[
     name: 'description',
   },
   {
-    message: "what are your table of contents",
-    type: 'input',
-    name: 'table of contents',
-  },
-  {
     message: "what instilation will or did you use for this project",
     type: 'input',
     name: 'instillations',
