@@ -15,6 +15,11 @@ const questions =[
     name: 'description',
   },
   {
+    message: "what are your table of contents",
+    type: 'input',
+    name: 'table of contents',
+  },
+  {
     message: "what instilation will or did you use for this project",
     type: 'input',
     name: 'instillations',
@@ -22,12 +27,27 @@ const questions =[
   {
     message: "what is the purpose of this project",
     type: 'input',
-    name: 'usuage',
-  }, 
+    name: 'usage',
+  },
   {
     message: "license of the project",
-    choices: ['MIT','AGPL','BSD 3', 'none','GPLv2']
+    choices: ['MIT,AGPL,BSD 3,none,GPLv2'],
     name: 'license',
+  },
+  {
+    message: "what are the contributions to the project",
+    type: 'input',
+    name: 'contribution',
+  },
+  {
+    message: "test Guidelines",
+    type: 'input',
+    name: 'Test',
+  },
+  {
+    message: "what is your github,linkin and email",
+    type: 'input',
+    name: 'Questions',
   },
 ]
 inquirer.prompt(questions)
