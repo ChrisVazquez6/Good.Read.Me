@@ -43,7 +43,12 @@ const questions =[
   {
     message: "what is your github",
     type: 'input',
-    name: 'Questions',
+    name: 'Github',
+  },
+  {
+    message: "what is your email",
+    type: 'input',
+    name: 'email',
   },
 ]
 inquirer.prompt(questions)
@@ -75,7 +80,7 @@ inquirer.prompt(questions)
 <p>${answers.Test}</p>
 
 <h3 id='questions'>Questions</h3>
-<p>for any questions contact me on github at ${answers.questions}</p>
+<p>for any questions contact me on github or email my github will be ${answers.Github} and my email is ${answers.email} </p>
 `
   fs.writeFile('readme1.md',readme1, err=>console.log(err))
 })
