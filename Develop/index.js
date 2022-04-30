@@ -8,10 +8,15 @@ const questions =[
     message:"what is your project name?",
     type:'input',
     name:'title',
-  }
+  },
+  {
+    message: "what is your project about?",
+    type: 'input',
+    name: 'description',
+  },
 ]
 inquirer.prompt(questions)
-.then(answers =>{
+.then(answers =>{  
   console.log(answers)
 })
 .catch(err=> console.log(err))
