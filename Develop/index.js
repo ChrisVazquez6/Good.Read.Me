@@ -46,7 +46,7 @@ const questions =[
     name: 'Test',
   },
   {
-    message: "what is your github,linkin and email",
+    message: "what is your github",
     type: 'input',
     name: 'Questions',
   },
@@ -55,8 +55,8 @@ inquirer.prompt(questions)
 .then(answers =>{  
   console.log(answers)
   let readme1 =`<img src= "https://img.shields.io/badge/${answers.license}-blue.svg">\
-<h1>Title</h1>
-<p>Decription</p>
+<h1>${answers.title}</h1>
+<p>${answers.description}</p>
 <p>Table of Cont</p>
 <details open='open'>
 <summary>Table of Cont</summary>
@@ -68,21 +68,19 @@ inquirer.prompt(questions)
 <li><a href='#questions'>Questions</a></li>
 </details>
 <h3 id='Installation'>Installation</h3>
-<p>${answers.installation}</p>
+<p>${answers.instillations}</p>
 
 <h3 id='Usage'>Usage</h3>
 <p>${answers.usage}</p>
 
 <h3 id='contributions'>Contributions</h3>
-<p>${answers.contributions}</p>
+<p>${answers.contribution}</p>
 
 <h3 id='test'>Test</h3>
-<p>${answers.contributions}</p>
+<p>${answers.Test}</p>
 
 <h3 id='questions'>Questions</h3>
-<p>Support 
-Github:ChrisVazquez6
-Email:cvg_v10@hotmail.com</p>
+<p>for any questions contact me on github at ${answers.questions}</p>
 `
   fs.writeFile('readme1.md',readme1, err=>console.log(err))
 })
