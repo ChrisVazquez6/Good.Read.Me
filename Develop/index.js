@@ -14,6 +14,21 @@ const questions =[
     type: 'input',
     name: 'description',
   },
+  {
+    message: "what instilation will or did you use for this project",
+    type: 'input',
+    name: 'instillations',
+  },
+  {
+    message: "what is the purpose of this project",
+    type: 'input',
+    name: 'usuage',
+  }, 
+  {
+    message: "license of the project",
+    choices: ['MIT','AGPL','BSD 3', 'none','GPLv2']
+    name: 'license',
+  },
 ]
 inquirer.prompt(questions)
 .then(answers =>{  
