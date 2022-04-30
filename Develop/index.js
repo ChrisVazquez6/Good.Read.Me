@@ -30,9 +30,10 @@ const questions =[
     name: 'usage',
   },
   {
-    message: "license of the project",
-    choices: ['MIT,AGPL,BSD 3,none,GPLv2'],
+    type: 'list',
     name: 'license',
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'AGPL', 'GPLv2', 'BSD 3', 'None'],
   },
   {
     message: "what are the contributions to the project",
